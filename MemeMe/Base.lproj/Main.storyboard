@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oIN-ON-7Bq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oIN-ON-7Bq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Title-->
@@ -19,11 +19,11 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rjd-b5-G6b" id="n10-nj-UQy">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="113.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="c5t-MY-dtS">
-                                            <rect key="frame" x="8" y="0.0" width="119" height="105.5"/>
+                                            <rect key="frame" x="8" y="0.0" width="119" height="106"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                         </imageView>
@@ -171,40 +171,44 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <items>
-                                    <navigationItem id="JM7-49-PZT">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="EGp-Lw-Ps5">
-                                            <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
-                                            <connections>
-                                                <action selector="shareIt:" destination="vXZ-lx-hvc" id="0wG-ua-iMI"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="fVb-a5-I4n">
-                                            <inset key="imageInsets" minX="0.0" minY="5" maxX="10" maxY="-8"/>
-                                            <connections>
-                                                <action selector="cancelByUser:" destination="vXZ-lx-hvc" id="VoG-s6-8Qy"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem id="rOD-yd-xDi"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Hi4-gn-NsA">
-                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="486"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <animations/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.75" contentMode="scaleToFill" id="wSS-LL-dgN">
+                                <rect key="frame" x="1" y="518" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="hyI-D6-Kt4"/>
+                                    <barButtonItem systemItem="camera" id="xHa-IW-l8b">
+                                        <connections>
+                                            <action selector="cameraActivate:" destination="Kw1-qw-u3n" id="tco-Hu-wR5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zfW-Ph-arj"/>
+                                    <barButtonItem title="album" id="KcV-AX-psJ">
+                                        <connections>
+                                            <action selector="albumActivate:" destination="Kw1-qw-u3n" id="pV0-Fr-vd9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="oPB-zf-Wlz"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hvX-D8-0ZW"/>
+                    <navigationItem key="navigationItem" id="KAS-DQ-Uyy"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="bottomText" destination="4Ln-nP-bFj" id="Tzt-bf-tIm"/>
-                        <outlet property="cancelButton" destination="fVb-a5-I4n" id="CTA-Tt-WPO"/>
                         <outlet property="navBar" destination="tWY-lZ-N8B" id="aK6-Db-a46"/>
                         <outlet property="photoPreview" destination="Hi4-gn-NsA" id="BH1-5C-BEG"/>
-                        <outlet property="shareButton" destination="EGp-Lw-Ps5" id="DsE-TX-irq"/>
                         <outlet property="topText" destination="dwm-Pe-HFm" id="bdV-Tg-uJ0"/>
                     </connections>
                 </viewController>
@@ -271,13 +275,185 @@
             </objects>
             <point key="canvasLocation" x="443" y="114"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="oaC-tq-fnp">
+            <objects>
+                <viewController id="5d9-5J-nE9" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqB-gU-n40">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mrn-4k-h0v">
+                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="ppd-ly-I9c">
+                                <rect key="frame" x="21" y="61" width="278" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="mrR-Lf-9Jb">
+                                <rect key="frame" x="21" y="475" width="278" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.75" contentMode="scaleToFill" id="g9e-gp-MUp">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="aPf-Ut-wQg"/>
+                                    <barButtonItem systemItem="camera" id="ucx-RS-KFt">
+                                        <connections>
+                                            <action selector="cameraActivate:" destination="5d9-5J-nE9" id="Euc-Qb-Tm4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f3X-gh-9Qh"/>
+                                    <barButtonItem title="album" id="0b4-rz-gHP">
+                                        <connections>
+                                            <action selector="albumActivate:" destination="5d9-5J-nE9" id="2of-gK-2k8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="BZK-wd-td6"/>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" id="eZX-Z8-hci">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="H2z-PQ-pIR">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="CI3-DQ-hMV">
+                                            <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="shareIt:" destination="5d9-5J-nE9" id="I4o-Gg-ZSQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="Owb-hu-oJq">
+                                            <inset key="imageInsets" minX="0.0" minY="5" maxX="10" maxY="-8"/>
+                                            <connections>
+                                                <action selector="cancelByUser:" destination="5d9-5J-nE9" id="0hS-Tt-Q91"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="albumButton" destination="0b4-rz-gHP" id="AzK-hM-s68"/>
+                        <outlet property="bottomText" destination="mrR-Lf-9Jb" id="CTO-C4-Ohg"/>
+                        <outlet property="cameraButton" destination="ucx-RS-KFt" id="8h2-Sm-0C4"/>
+                        <outlet property="cancelButton" destination="Owb-hu-oJq" id="CQ1-0W-1Cf"/>
+                        <outlet property="navBar" destination="eZX-Z8-hci" id="KR8-iO-IlQ"/>
+                        <outlet property="photoPreview" destination="Mrn-4k-h0v" id="V0U-aC-hMX"/>
+                        <outlet property="pickFromAlbum" destination="g9e-gp-MUp" id="0Id-Xc-IYW"/>
+                        <outlet property="shareButton" destination="CI3-DQ-hMV" id="NeX-07-uPH"/>
+                        <outlet property="toolBar" destination="g9e-gp-MUp" id="xcP-xB-swE"/>
+                        <outlet property="topText" destination="ppd-ly-I9c" id="CXI-KE-e4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmi-sU-CQG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yAc-Z7-xW2">
+            <objects>
+                <viewController id="Kw1-qw-u3n" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fUU-Gl-qqq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="uBN-yH-blm">
+                                <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="DRs-26-UYy">
+                                <rect key="frame" x="21" y="61" width="278" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="RvP-hQ-8Px">
+                                <rect key="frame" x="21" y="475" width="278" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" spellCheckingType="yes"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.75" contentMode="scaleToFill" id="mbG-Lq-Dr8">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Fqh-U7-CbT"/>
+                                    <barButtonItem systemItem="camera" id="gwY-2F-IRM">
+                                        <connections>
+                                            <action selector="cameraActivate:" destination="Kw1-qw-u3n" id="2F1-0P-4Go"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fcY-Mh-35Q"/>
+                                    <barButtonItem title="album" id="Max-7E-ecP">
+                                        <connections>
+                                            <action selector="albumActivate:" destination="Kw1-qw-u3n" id="7hN-ET-VAf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="vKy-AV-DPm"/>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" id="Vnh-B9-L8F">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="kEA-o3-vsX">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="HIX-Dj-9W9">
+                                            <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="shareIt:" destination="Kw1-qw-u3n" id="sl9-Ju-AhK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="ekh-p4-Gqd">
+                                            <inset key="imageInsets" minX="0.0" minY="5" maxX="10" maxY="-8"/>
+                                            <connections>
+                                                <action selector="cancelByUser:" destination="Kw1-qw-u3n" id="pmG-SD-aK4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="albumButton" destination="Max-7E-ecP" id="0yi-2m-piF"/>
+                        <outlet property="bottomText" destination="RvP-hQ-8Px" id="DDq-ZG-IFa"/>
+                        <outlet property="cameraButton" destination="gwY-2F-IRM" id="PkD-5M-Pwj"/>
+                        <outlet property="cancelButton" destination="ekh-p4-Gqd" id="Kap-Ei-7uc"/>
+                        <outlet property="navBar" destination="Vnh-B9-L8F" id="E7A-Na-8Ak"/>
+                        <outlet property="photoPreview" destination="uBN-yH-blm" id="wTb-tO-uXC"/>
+                        <outlet property="pickFromAlbum" destination="mbG-Lq-Dr8" id="A0O-Hu-U15"/>
+                        <outlet property="shareButton" destination="HIX-Dj-9W9" id="vgu-PU-zez"/>
+                        <outlet property="toolBar" destination="mbG-Lq-Dr8" id="U6x-9T-U9D"/>
+                        <outlet property="topText" destination="DRs-26-UYy" id="NG1-oo-3bq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Uw-PR-7pb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="354"/>
+        </scene>
     </scenes>
     <resources>
         <image name="collections" width="30" height="30"/>
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7TI-YK-s1C"/>
-        <segue reference="Ad8-BO-HQw"/>
+        <segue reference="mVV-0W-W8s"/>
+        <segue reference="Wjs-a8-oW5"/>
     </inferredMetricsTieBreakers>
 </document>

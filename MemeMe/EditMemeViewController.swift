@@ -38,7 +38,7 @@ class EditMemeViewController: UIViewController, UIImagePickerControllerDelegate,
         
        
         if  UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) == false {
-            cameraButton.enabled = false
+            //cameraButton.enabled = false
         }
         
         shareButton.enabled = false
