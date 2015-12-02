@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F99B2BC2-A3F4-4D91-945F-13F622758357</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MemeMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35BCC4A9EF7F1FEBAFDDDA4EF60D330B89962B3E</key>
+		<string>https://github.com/eleanorstrib/MemeMe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MemeMe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35BCC4A9EF7F1FEBAFDDDA4EF60D330B89962B3E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eleanorstrib/MemeMe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35BCC4A9EF7F1FEBAFDDDA4EF60D330B89962B3E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35BCC4A9EF7F1FEBAFDDDA4EF60D330B89962B3E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MemeMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>
