@@ -1,8 +1,8 @@
 //
 //  MemeMeTests.swift
-//  MemeMev1Tests
+//  MemeMe v2
 //
-//  Created by Elva Cabrera on 10/1/15.
+//  Created by Elva Cabrera on 12/3/15.
 //  Copyright (c) 2015 elvacabrera. All rights reserved.
 //
 

@@ -27,8 +27,8 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="memeTextLabel" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="jnt-Ab-I9i">
-                                            <rect key="frame" x="141" y="37" width="138" height="32"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="memeTextLabel" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="jnt-Ab-I9i">
+                                            <rect key="frame" x="135" y="37" width="160" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -42,7 +42,6 @@
                                 <connections>
                                     <outlet property="memeImageView" destination="c5t-MY-dtS" id="Jkn-ad-qXF"/>
                                     <outlet property="memeTextLabel" destination="jnt-Ab-I9i" id="4X6-G3-RMQ"/>
-                                    <segue destination="lzr-xJ-tuY" kind="push" id="Ad8-BO-HQw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +54,7 @@
                     <navigationItem key="navigationItem" title="Table View Controller" id="eJn-qd-RtA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="B3E-aI-ZSr">
                             <connections>
-                                <segue destination="5d9-5J-nE9" kind="modal" id="FQe-aE-aSn"/>
+                                <segue destination="5d9-5J-nE9" kind="modal" id="a4p-h1-6vf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -102,7 +101,6 @@
                                 <animations/>
                                 <connections>
                                     <outlet property="memeImageView" destination="4YG-kl-J0X" id="DzA-EG-RBx"/>
-                                    <segue destination="lzr-xJ-tuY" kind="push" id="Wjs-a8-oW5"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -129,7 +127,6 @@
         <!--Meme Detail View Controller-->
         <scene sceneID="qg8-On-uVe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AyF-NA-P4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MemeDetailViewController" id="lzr-xJ-tuY" customClass="MemeDetailViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbo-7i-h12">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -149,6 +146,7 @@
                         <outlet property="memeImageView" destination="eX8-KW-575" id="ocX-qy-k8a"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyF-NA-P4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2047" y="-212"/>
         </scene>
@@ -311,7 +309,6 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wjs-a8-oW5"/>
-        <segue reference="FQe-aE-aSn"/>
+        <segue reference="a4p-h1-6vf"/>
     </inferredMetricsTieBreakers>
 </document>

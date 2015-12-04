@@ -1,8 +1,8 @@
 //
 //  MemeCollectionViewController.swift
-//  MemeMe_v1
+//  MemeMe v2
 //
-//  Created by Elva Cabrera on 11/9/15.
+//  Created by Elva Cabrera on 12/3/15.
 //  Copyright © 2015 elvacabrera. All rights reserved.
 //
 
